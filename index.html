@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Old-Time Computer Museum</title>
+ <meta charset="utf-8">
+</head>
+<body>
+ <h1>Donation Form</h1>
+ <form action="/donationform.php" method="POST">
+ <fieldset>
+ <legend>Make a donation</legend>
+ <ol>
+  <li><label for="firstlast">Name:</label>
+ <input type="text" name="fullname" id="firstlast"></li>
+ 
+ <p>Select a donation category.
+<select name="DonationGroup">
+ <option>Student ($20)</option>
+ <option>Individual ($45)</option>
+ <option>Family ($60)</option>
+ <option>Patron ($250)</option>
+ <option>Benefactor ($750)</option>
+</select>
+</p>
+
+<li>Name honoree or in memorium(optional):<br>
+<textarea name="honoree" rows="4" cols="60" 
+maxlength="400" placeholder="No more than 400 
+characters long"></textarea></li>
+
+ <li><label for="city">City:</label>
+ <input type="text" name="city" id="city"></li>
+ 
+ <li><label for="state">State:</label>
+ <input type="text" name="state" id="state"></li>
+ 
+  <li><label for="zip">Zip:</label>
+ <input type="text" name="zip" id="zip"></li>
+ 
+ <li><label for="email">Email:</label>
+ <input type="text" name="email" id="email"></li>
+ </ol>
+ <input type="submit" value="Submit">
+ </fieldset>
+ </form>
+</body>
+</html>
